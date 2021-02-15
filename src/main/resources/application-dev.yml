@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+student:
+  grade: B
+  age: 15

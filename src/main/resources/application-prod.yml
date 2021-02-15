@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+student:
+  grade: A
+  age: 15
