@@ -4,3 +4,4 @@ server:
 student:
   grade: B
   age: 15
+  telephone: 11

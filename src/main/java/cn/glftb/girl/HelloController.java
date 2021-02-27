@@ -14,7 +14,7 @@ public class HelloController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String say() {
 
-        return studentProperties.getGrade();
+        return studentProperties.getTelephone();
     }
 }
 
