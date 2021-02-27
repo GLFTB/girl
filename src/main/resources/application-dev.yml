@@ -5,3 +5,5 @@ student:
   grade: B
   age: 15
   telephone: 11
+test:
+  telephone: 11
