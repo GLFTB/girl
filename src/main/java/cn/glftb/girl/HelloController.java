@@ -24,10 +24,10 @@ public class HelloController {
 
         return studentProperties.getTelephone();
     }
+
     @RequestMapping(value = "/say/telephone1", method = RequestMethod.GET)
     public String say3() {
-
-        return studentProperties.getTelephone();
+        return telephone;
     }
 
 }
