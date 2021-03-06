@@ -2,9 +2,8 @@ package cn.glftb.girl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HelloController {
@@ -29,6 +28,18 @@ public class HelloController {
     public String say3() {
         return telephone;
     }
+
+    @RequestMapping(value = "/say/{id}", method = RequestMethod.GET)
+    public String say4(@PathVariable("id") Integer id) {
+        return "id: " + id;
+    }//NO!!!!!!!!
+
+    @RequestMapping(value = "/say", method = RequestMethod.GET)
+    public String say5(@RequestParam("id") Integer id) {
+        return "id: " + id;
+
+    }//YES!!!!!!!!
+
 
 }
 
