@@ -12,6 +12,11 @@ public class UserController {
         return "id: " + username + " " + age;
 
     }
+    @RequestMapping(value = "/user", method = RequestMethod.GET)
+    public String say5(@RequestParam("username") String username, @RequestParam(value = "age",required = false,defaultValue ="0") Integer age) {
+        return "id: " + username + ""+ age;
+
+    }
 
 
 }
