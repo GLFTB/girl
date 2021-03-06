@@ -1,5 +1,6 @@
-package cn.glftb.girl;
+package cn.glftb.girl.controller;
 
+import cn.glftb.girl.StudentProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
